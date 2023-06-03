@@ -1,0 +1,173 @@
+.h-newsletter{
+    background-color: #ffffff;
+    z-index: 999;
+    border-radius: 3rem;
+    display: flex;
+
+    @include max(800) {
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    @include max(440) {
+        width: 100%;
+        align-items: center;
+    }
+
+    &__contents {
+        padding: 4rem;
+    }
+
+    &__texts {
+
+        & h1 {
+            font-size: 5rem;
+            color: #282a43;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        & span, p {
+            font-size: 1.5rem;
+            color: #282a43;
+            max-width: 35rem;
+            font-weight: 500;
+        }
+
+        & .image-text {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            gap: 2rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        & label {
+            font-size: 1.2rem;
+            color: #232742;
+            font-weight: 500;
+            margin-top: 4rem;
+        }
+
+        & input {
+            padding: 1.8rem;
+            border-radius: .5rem;
+            border: 1px solid #d5d5d5;
+            margin-top: 1rem;
+        }
+
+        & input::placeholder {
+            color: #d5d5d5;
+        }
+
+        & button {
+            padding: 1rem;
+            background-color: #232742;
+            color: #fff;
+            font-weight: 600;
+            border-radius: .5rem;
+            padding: 1.7rem;
+            margin-top: 2rem;
+            transition: .5s all;
+            font-size: 1.4rem;
+
+            &:hover {
+                background-color: #ff634e;
+                color: #232742;
+                
+            }
+        }
+    }
+
+    &__figure {
+        padding: 2.5rem;
+    
+       
+    }
+
+    &__container {
+        background: linear-gradient(34deg, rgba(255,84,120,1) 35%, rgba(255,105,62,1) 100%);
+        height: 100%;
+        border-radius: 2rem;
+        width: 38rem;
+        position: relative;
+
+        & img:nth-child(1) {
+            width: 38rem;
+            bottom: 0;
+            top: 2rem;
+            position: absolute;
+            right: 2rem;
+            z-index: 999;
+
+            @include max(800) {
+                position: static;
+            }
+            
+        }
+
+        .image {
+            
+            &--1 {
+                width: 10rem;
+                position: absolute;
+                left: 9rem;
+
+                @include max(800) {
+                    
+                }
+            }
+
+            &--2 {
+                width: 10rem;
+                position: absolute;
+                bottom: 5rem;
+
+                @include max(800) {
+                   bottom: 0;
+                   right: 25rem;
+                }
+            }
+
+            &--3 {
+                width: 10rem;
+                position: absolute;
+                bottom: 7rem;
+                left: 25rem;
+                z-index: 1000;
+
+                @include max(800) {
+                    bottom: 0;
+                }
+            }
+
+            &--4 {
+                width: 10rem;
+                position: absolute;
+                top: 18rem;
+                right: 25rem;
+                z-index: 1000;
+
+                @include max(800) {
+                    top: 13rem;
+                }
+            }
+
+            &--5 {
+                width: 10rem;
+                position: absolute;
+                top: 9rem;
+                left: 25rem;
+
+                @include max(800) {
+                    top: 1rem;
+                    left: 29rem;
+                }
+            }
+        }
+    }
+}
