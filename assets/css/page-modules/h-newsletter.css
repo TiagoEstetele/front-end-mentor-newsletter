@@ -1,11 +1,13 @@
 /* Error: Undefined mixin.
  *    ,
- * 13 | /     @include max(800) {
- * 14 | |         flex-direction: column-reverse;
- * 15 | |         border-radius: 0;
- * 16 | \     }
+ * 15 | /     @include max(800) {
+ * 16 | |         flex-direction: column-reverse;
+ * 17 | |         border-radius: 0;
+ * 18 | |         width: 100%;
+ * 19 | |         align-items: center;
+ * 20 | \     }
  *    '
- *   assets/sass/page-modules/h-newsletter.scss 13:5  root stylesheet */
+ *   assets/sass/page-modules/h-newsletter.scss 15:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +17,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c      @include max(800) {\a 14 \2502  \2502          flex-direction: column-reverse;\a 15 \2502  \2502          border-radius: 0;\a 16 \2502  \2514      }\a    \2575 \a   assets/sass/page-modules/h-newsletter.scss 13:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502  \250c      @include max(800) {\a 16 \2502  \2502          flex-direction: column-reverse;\a 17 \2502  \2502          border-radius: 0;\a 18 \2502  \2502          width: 100%;\a 19 \2502  \2502          align-items: center;\a 20 \2502  \2514      }\a    \2575 \a   assets/sass/page-modules/h-newsletter.scss 15:5  root stylesheet";
 }

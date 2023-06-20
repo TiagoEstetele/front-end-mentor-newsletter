@@ -43,6 +43,12 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+::selection {
+    background-color: #7e5597;
+    color: #fff;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 80%;

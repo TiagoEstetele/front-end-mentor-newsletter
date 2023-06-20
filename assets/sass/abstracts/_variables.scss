@@ -1,0 +1,15 @@
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.invalid {
+    border: .1rem solid red !important;
+}
+
+.valid {
+    background-position: right;
+    color: #232742;
+    box-shadow: -1px 15px 30px 0px rgba(0,0,0,0.75);
+}

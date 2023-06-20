@@ -21,3 +21,33 @@
         display: none !important;
     }
 }
+
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.invalid {
+    border: .1rem solid #ff0000 !important;
+}
+
+.valid {
+    background-position: right;
+    color: #232742;
+    box-shadow: -1px 15px 30px 0px rgba(0,0,0,0.75);
+}
+
+.showValid {
+    color: #059900;
+    opacity: 1 !important;
+    transform: translate(0) !important;
+    overflow: visible !important;
+}
+
+.showInvalid {
+    color: #ff0000;
+    opacity: 1 !important;
+    transform: translate(0) !important;
+    overflow: visible !important;
+}

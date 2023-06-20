@@ -57,26 +57,34 @@
                 </div>
 
                 <div class="h-newsletter__form">
-                    <label for="email">Email address</label>
+                    <div class="h-newsletter__validation">
+                        <label for="email">Email address</label>
+                        <p>Email inválido</p>
+                        <img src="assets/img/svg/exclamation-mark-sign_icon-icons.com_54000.svg" alt="teste">
+                        <div class="h-newsletter__information">
+                            <p>Add a valid email, it must contain the patterns contained in an email, such as @ and .</p>
+                        </div>
+                    </div>
                     <input type="email" placeholder="email@company.com">
                     <button type="submit">Subscribe to monthly newsletter</button>
                 </div>
             </div>
 
             <div class="h-newsletter__figure">
-                <div class="h-newsletter__container">
+                <figure class="h-newsletter__container">
                     <img class="layer" data-speed="1" src="assets/img/newslleter-person.png" alt="Personagem representativo">
                     <img class="layer image--1" data-speed="2" src="assets/img/comentarios.png" alt="">
                     <img class="layer image--2" data-speed="-1" src="assets/img/e-mail.png" alt="">
                     <img class="layer image--3" data-speed="4" src="assets/img/jornal.png" alt="">
                     <img class="layer image--4" data-speed="3" src="assets/img/noticias.png" alt="">
                     <img class="layer image--5" data-speed="5" src="assets/img/noticia.png" alt="">
-                </div>
+                </figure>
             </div>
         </section>
     </div>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/parallax.js" ></script>
     <script src="assets/js/show.js" ></script>
+    <script src="assets/js/validationEmail.js" ></script>
 </body>
 </html> 
