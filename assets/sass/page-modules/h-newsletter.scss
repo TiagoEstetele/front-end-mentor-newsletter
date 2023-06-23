@@ -80,7 +80,14 @@
             transition: 1s all;
             font-size: 1.4rem;
             background-size: 250%;
+
+            &:disabled {
+                opacity: .7;
+                cursor: not-allowed;
+            }
         }
+
+        
     }
 
     &__validation {
@@ -90,7 +97,7 @@
         position: relative;
         
         & > p {
-            margin: 4rem 2rem 0 0;
+            margin: 4rem 2rem 0 16rem;
             font-size: 1.2rem;
             font-weight: 500;
             opacity: 0;
@@ -112,7 +119,7 @@
 
     &__information {
         position: absolute;
-        right: 0;
+        left: 100%;
         top: 100%;
         border: 1px solid #271f42;
         border-radius: .5rem;
@@ -122,6 +129,7 @@
         opacity: 0;
         overflow: hidden;
         margin-top: .5rem;
+        margin: .5rem 0 0 .5rem;
 
         & > p {
             font-size: 1.5rem;

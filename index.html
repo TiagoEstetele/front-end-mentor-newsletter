@@ -30,7 +30,6 @@
                 <h2>Stay on top of the news</h2>
                 <p>Subscribe to the newsletter</p>
                 <button>let's go</button>
-
             </div>
         </section>
 
@@ -41,17 +40,17 @@
                     <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
                     <figure class="image-text">
-                        <img src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
+                        <img width="21" height="21" src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
                         <span>Product discovery and building what matters</span>
                     </figure>
 
                     <figure class="image-text">
-                        <img src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
+                        <img width="21" height="21" src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
                         <span>Measuring to ensure updates are a sucess</span>
                     </figure>
 
                     <figure class="image-text">
-                        <img src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
+                        <img width="21" height="21" src="assets/img/svg/icon-list.svg" alt="Imagem de verificado">
                         <span>And much more!</span>
                     </figure>
                 </div>
@@ -60,25 +59,38 @@
                     <div class="h-newsletter__validation">
                         <label for="email">Email address</label>
                         <p>Email inválido</p>
-                        <img src="assets/img/svg/exclamation-mark-sign_icon-icons.com_54000.svg" alt="teste">
+                        <img width="1365" height="941" src="assets/img/svg/exclamation-mark-sign_icon-icons.com_54000.svg" alt="Imagem de verificado">
                         <div class="h-newsletter__information">
                             <p>Add a valid email, it must contain the patterns contained in an email, such as @ and .</p>
                         </div>
                     </div>
                     <input type="email" placeholder="email@company.com">
-                    <button type="submit">Subscribe to monthly newsletter</button>
+                    <button disabled type="submit">Subscribe to monthly newsletter</button>
                 </div>
             </div>
 
             <div class="h-newsletter__figure">
                 <figure class="h-newsletter__container">
-                    <img class="layer" data-speed="1" src="assets/img/newslleter-person.png" alt="Personagem representativo">
-                    <img class="layer image--1" data-speed="2" src="assets/img/comentarios.png" alt="">
-                    <img class="layer image--2" data-speed="-1" src="assets/img/e-mail.png" alt="">
-                    <img class="layer image--3" data-speed="4" src="assets/img/jornal.png" alt="">
-                    <img class="layer image--4" data-speed="3" src="assets/img/noticias.png" alt="">
-                    <img class="layer image--5" data-speed="5" src="assets/img/noticia.png" alt="">
+                    <img  width="500" height="449" class="layer" data-speed="1" src="assets/img/newslleter-person.png" alt="Personagem representativo">
+                    <img  width="512" height="512" class="layer image--1" data-speed="2" src="assets/img/comentarios.png" alt="">
+                    <img  width="512" height="512" class="layer image--2" data-speed="-1" src="assets/img/e-mail.png" alt="">
+                    <img  width="512" height="512" class="layer image--3" data-speed="4" src="assets/img/jornal.png" alt="">
+                    <img  width="512" height="512" class="layer image--4" data-speed="3" src="assets/img/noticias.png" alt="">
+                    <img  width="512" height="449" class="layer image--5" data-speed="5" src="assets/img/noticia.png" alt="">
                 </figure>
+            </div>
+        </section>
+
+        <section class="h-success">
+            <div class="h-success__contents">
+                <div class="h-success__figure">
+                    <figure>
+                        <img  loading="lazy" width="240" height="240" src="assets/img/svg/checkmark.svg" alt="Imagem representativa de sucesso">
+                    </figure>
+                </div>
+                <div class="h-success__message">
+                    <h2>Congratulations, you are now a subscriber to our newsletter</h2>
+                </div>
             </div>
         </section>
     </div>
@@ -86,5 +98,6 @@
     <script src="assets/js/parallax.js" ></script>
     <script src="assets/js/show.js" ></script>
     <script src="assets/js/validationEmail.js" ></script>
+    <script src="assets/js/confetti.js"></script>
 </body>
 </html> 

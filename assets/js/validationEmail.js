@@ -16,6 +16,7 @@ email.addEventListener('input', function() {
   labelValid.classList.toggle('showValid', isValidEmail);
   labelValid.classList.toggle('showInvalid', !isValidEmail);
   labelValid.textContent = isValidEmail ? 'Email válido!' : 'Email inválido!';
+  button.disabled = !isValidEmail;
 });
 
 const buttonInformation = $j('.h-newsletter__validation > img');
